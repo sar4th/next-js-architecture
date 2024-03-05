@@ -3,17 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "prepare": "husky init",
     "preinstall": "npx only-allow npm",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prettier": "prettier --write .",
-    "prepare": "husky"
+    "prettier": "prettier --write ."
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "eslint --fix --ext .ts,.tsx,.js,.jsx"
+      "eslint --ext .ts,.tsx,.js,.jsx"
     ],
     "*.{js,jsx,ts,tsx,json,cjs,mjs,md}": [
       "prettier --write ."
