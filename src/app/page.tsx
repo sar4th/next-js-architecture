@@ -1,8 +1,13 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-
+import { useEffect, useState } from "react";
 export default function Home() {
   const name = "";
+  const [first, setFirst] = useState("second");
+
+  useEffect(() => {
+    setFirst("third");
+  }, []);
 
   return (
     <main className={styles.main}>
@@ -18,7 +23,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{" "}
+            By{first}
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
