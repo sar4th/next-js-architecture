@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prepare": "husky init",
+    "prepare": "husky",
     "preinstall": "npx only-allow npm",
     "dev": "next dev",
     "build": "next build",
