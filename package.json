@@ -3,10 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "preinstall": "npx only-allow npm",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
+  },
+  "engine": {
+    "node": ">=v20.10.0",
+    "npm": ">=10.2.3"
   },
   "dependencies": {
     "react": "^18",
