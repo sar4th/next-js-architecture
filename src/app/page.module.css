@@ -4,10 +4,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000; /* Black */
-  color: #00f7ff; /* Neon blue */
+  background-color: #000; 
+  color: #00f7ff;
 }
-
 main.container {
   text-align: center;
 }
